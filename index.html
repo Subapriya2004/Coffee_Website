@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Bliss</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2d9d6b6c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">Coffee<span>Bliss</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="menuToggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Wake up to the perfect cup</h1>
+        <p>Handcrafted coffee made fresh every day just for you.</p>
+        <a href="#menu" class="btn">See Menu</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop" alt="Coffee cup">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about container">
+    <h2 class="section-title">About Us</h2>
+    <p>We brew happiness one cup at a time using premium coffee beans and expert techniques.</p>
+    <div class="features-grid">
+      <div class="feature">
+        <i class="fas fa-seedling fa-2x"></i>
+        <h3>Fresh Beans</h3>
+        <p>Ethically sourced and freshly roasted.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-mug-hot fa-2x"></i>
+        <h3>Expert Baristas</h3>
+        <p>Made with skill and passion.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-truck fa-2x"></i>
+        <h3>Fast Delivery</h3>
+        <p>Your favorite coffee, delivered in minutes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="products container">
+  <h2 class="section-title">Our Menu</h2>
+
+  <div class="product-row">
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop" alt="Espresso">
+    <div class="product-info">
+      <h3>Espresso</h3>
+      <p>Bold and rich flavor.</p>
+      <span class="price">₹80</span>
+      <a href="payment.html" class="order-btn">Order Now</a>
+    </div>
+  </div>
+
+  <div class="product-row">
+    <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=800&auto=format&fit=crop" alt="Latte">
+    <div class="product-info">
+      <h3>Latte</h3>
+      <p>Creamy and smooth.</p>
+      <span class="price">₹120</span>
+      <a href="payment.html" class="order-btn">Order Now</a>
+    </div>
+  </div>
+
+  <div class="product-row">
+    <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=800&auto=format&fit=crop" alt="Cappuccino">
+    <div class="product-info">
+      <h3>Cappuccino</h3>
+      <p>Classic and comforting.</p>
+      <span class="price">₹130</span>
+      <a href="payment.html" class="order-btn">Order Now</a>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="contact container">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contactForm" class="contact-form">
+      <div class="form-row">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+      </div>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formStatus" class="form-status"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> CoffeeBliss — Made with ☕</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
